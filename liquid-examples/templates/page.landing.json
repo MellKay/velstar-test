@@ -1,0 +1,36 @@
+{
+	"sections": {
+		"header": {
+			"type": "collection-banner",
+			"settings": {
+				"image_desktop": "../../assets/desktop-header-banner.png",
+				"image_mobile": "../../assets/mobile-header-banner.png",
+				"title": "Next Generation",
+				"subtitle": "Coming Soon",
+				"description": "Tero Palmroth Design opposes disposable fashion culture. These boots and shoes are made to last. The designs and styles are timeless. The craftmanship quality is high.",
+				"blocks": {
+					"button_1":{
+						"url": "#",
+						"text": "Pre Order",
+						"button_style": "btn--branded",
+						"show_arrow": true
+					},
+					"button_2":{
+						"url": "#",
+						"text": "Read The Story",
+						"button_style": "btn--light",
+						"show_arrow": false
+					}
+				}
+			}
+		},
+		"main": {
+			"type": "collection-grid",
+			"settings": {
+				"collection": "all-mens",
+				"text": "See Everything"
+			}
+		}
+	},
+	"order": ["collection-banner", "collection-grid"]
+}

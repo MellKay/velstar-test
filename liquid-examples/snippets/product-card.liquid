@@ -1,0 +1,15 @@
+<a class="product-card" href="{{ product.url | within: collection }}">
+    <img class="image-1" src="{{ product.images[0] | img_url: '350x350'}}" alt="{{ product.images[0].alt }}" />
+    <img class="image-2" src="{{ product.images[1] | img_url: '350x350'}}" alt="{{ product.images[1].alt }}" />
+    <div class="product-card__footer">
+        <h4>{{ product.title }}</h4>
+        <p>{{ product.price | money_without_trailing_zeros }}</p>
+        {% if product.metafields.custom.alt_colors != blank %}
+            <div class="alt-colors-wrap">
+                {% for color in product.metafields.custom.alt_colors %}
+                    <span class="swatch" style="background-color: {{ color }};"></span>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</a>
