@@ -6,4 +6,4 @@ I've added some comments in where needed to explain some of my choices.
 
 I've built the liquid assuming this would be a landing page but could be reworked to fit a collection page easily.
 
-The settings in [page.landing.json]('./liquid-examples/templates/page.landing.json) were manually written out.
+The settings in [page.landing.json]('liquid-examples/templates/page.landing.json) were manually written out.
